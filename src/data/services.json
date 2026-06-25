@@ -1,0 +1,124 @@
+{
+  "services": [
+    {
+      "id": "notarisation",
+      "number": "01",
+      "title": "Notarisation",
+      "shortDescription": "Official authentication of documents for international and domestic use.",
+      "fullDescription": "Our notarisation service provides legally binding authentication of your important documents. Whether it's for personal or commercial purposes, our experienced notary public will verify identities, witness signatures, and apply the official notarial seal to ensure your documents carry full legal weight both domestically and internationally.",
+      "features": [
+        "Document verification and authentication",
+        "Witness to signatures and oaths",
+        "Official notarial seal and certificate",
+        "Certified true copies",
+        "Same-day service available"
+      ],
+      "icon": "stamp"
+    },
+    {
+      "id": "legalisation",
+      "number": "02",
+      "title": "Legalisation",
+      "shortDescription": "FCO apostille services for documents recognised worldwide.",
+      "fullDescription": "We handle the complete legalisation process for your documents, including submission to the Foreign, Commonwealth & Development Office (FCDO) for apostille certification. This ensures your documents are recognised in countries that are signatories to the Hague Convention, and we can arrange embassy legalisation for non-Hague countries.",
+      "features": [
+        "FCDO apostille processing",
+        "Embassy legalisation for non-Hague countries",
+        "Document preparation and review",
+        "Fast-track service options",
+        "Complete chain of authentication"
+      ],
+      "icon": "globe"
+    },
+    {
+      "id": "company-docs",
+      "number": "03",
+      "title": "Company Documentation",
+      "shortDescription": "Corporate document authentication for international business.",
+      "fullDescription": "From board resolutions to articles of association, we provide comprehensive notarial services for all corporate documentation. Our expertise covers company formations, mergers, acquisitions, and ongoing corporate governance documents that require notarial authentication for international recognition.",
+      "features": [
+        "Board resolutions and minutes",
+        "Articles of association",
+        "Certificate of incorporation copies",
+        "Corporate powers of attorney",
+        "Share transfer documents"
+      ],
+      "icon": "building"
+    },
+    {
+      "id": "identity-verification",
+      "number": "04",
+      "title": "Identity Verification",
+      "shortDescription": "Professional verification of passports, IDs, and identity documents.",
+      "fullDescription": "We provide certified verification of identity documents including passports, driving licences, and other government-issued identification. This service is commonly required for banking, property transactions, visa applications, and other situations where verified proof of identity is needed.",
+      "features": [
+        "Passport verification and certification",
+        "Driving licence copies",
+        "Government-issued ID authentication",
+        "KYC compliance documentation",
+        "Certified true copies of all ID types"
+      ],
+      "icon": "shield-check"
+    },
+    {
+      "id": "title-deeds",
+      "number": "05",
+      "title": "Transfer of Title & Deeds",
+      "shortDescription": "Property and asset transfer documentation with notarial certification.",
+      "fullDescription": "Whether you are transferring property, land, or other titled assets, our notarial service ensures all documentation is properly executed and authenticated. We handle both domestic property transactions and international real estate documentation.",
+      "features": [
+        "Property transfer documents",
+        "Land registry documentation",
+        "International real estate papers",
+        "Deed certification",
+        "Title verification services"
+      ],
+      "icon": "file-key"
+    },
+    {
+      "id": "power-of-attorney",
+      "number": "06",
+      "title": "Power of Attorney",
+      "shortDescription": "Legal authority documents notarised for domestic and overseas use.",
+      "fullDescription": "We prepare and notarise Powers of Attorney for use both in the UK and internationally. Whether you need a general or specific power of attorney, our notary will ensure the document meets all legal requirements of the jurisdiction where it will be used.",
+      "features": [
+        "General Power of Attorney",
+        "Specific/Limited Power of Attorney",
+        "Lasting Power of Attorney support",
+        "International PoA documents",
+        "Revocation of Power of Attorney"
+      ],
+      "icon": "scale"
+    },
+    {
+      "id": "affidavits",
+      "number": "07",
+      "title": "Affidavits & Declarations",
+      "shortDescription": "Sworn statements and statutory declarations under oath.",
+      "fullDescription": "We administer oaths and affirmations for affidavits and statutory declarations. These sworn statements are used in legal proceedings, immigration applications, name changes, and many other situations requiring a formal declaration of truth.",
+      "features": [
+        "Sworn affidavits",
+        "Statutory declarations",
+        "Oath administration",
+        "Immigration affidavits",
+        "Name change declarations"
+      ],
+      "icon": "pen-tool"
+    },
+    {
+      "id": "consular-services",
+      "number": "08",
+      "title": "Consular & Embassy Work",
+      "shortDescription": "Document preparation for embassy submissions worldwide.",
+      "fullDescription": "We regularly work with embassies and consulates worldwide to ensure your documents meet their specific requirements. Our experience with various jurisdictions means we understand the nuances of each country's documentation standards.",
+      "features": [
+        "Embassy-specific document preparation",
+        "Consular legalisation coordination",
+        "Country-specific requirements guidance",
+        "Translation certification",
+        "Multi-jurisdictional document handling"
+      ],
+      "icon": "landmark"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "notary": {
+    "name": "Gopal Krishan Gupta",
+    "title": "Notary Public",
+    "honorific": "M.B.E.",
+    "yearsExperience": 41,
+    "established": 1983,
+    "bio": "Gopal has been a notary public for over 41 years, serving a vast and diverse client base across London. Throughout these decades, he has provided notarial services with dedication, precision, and a personal touch that sets his practice apart.",
+    "extendedBio": "He is committed to helping clients with their requirements in a fast and efficient manner, understanding that time-sensitive legal matters require responsive, reliable service. His deep expertise spans all areas of notarial practice, from simple document authentication to complex international corporate transactions.",
+    "personalNote": "Beyond his professional life, Gopal enjoys spending time with friends and family and is a devoted cricket follower. He is also a dedicated philanthropist who constantly gives back to his community, supports students, and undertakes charitable activities in places of need.",
+    "mbeDetails": "Gopal was awarded an M.B.E. in the Queen's New Year's Honours 2018 for his outstanding services to British business and philanthropy — a testament to his decades of professional excellence and community contribution.",
+    "phone": "07958083458"
+  },
+  "milestones": [
+    { "year": "1983", "event": "Established notary practice in London" },
+    { "year": "1990", "event": "Expanded services to include international legalisation" },
+    { "year": "2000", "event": "Opened Kentish Town office" },
+    { "year": "2010", "event": "Expanded with Green Lanes office" },
+    { "year": "2018", "event": "Awarded M.B.E. in Queen's New Year's Honours" },
+    { "year": "2024", "event": "Over 41 years of continuous service to London" }
+  ]
+}

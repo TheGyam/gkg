@@ -1,0 +1,128 @@
+.magnetic-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  font-family: var(--font-body);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color var(--duration-normal) var(--ease-out-expo),
+              border-color var(--duration-normal) var(--ease-out-expo);
+}
+
+.magnetic-btn__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.magnetic-btn__text {
+  position: relative;
+  z-index: 1;
+}
+
+.magnetic-btn__icon {
+  position: relative;
+  z-index: 1;
+  transition: transform var(--duration-normal) var(--ease-out-expo);
+}
+
+.magnetic-btn:hover .magnetic-btn__icon {
+  transform: translateX(4px);
+}
+
+/* ── Variants ── */
+
+.magnetic-btn--primary {
+  background: var(--color-brass);
+  color: var(--color-midnight);
+  border-radius: var(--radius-sm);
+}
+
+.magnetic-btn--primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-brass-dark);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--duration-slow) var(--ease-out-expo);
+  border-radius: inherit;
+}
+
+.magnetic-btn--primary:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.magnetic-btn--outline {
+  background: transparent;
+  color: var(--color-brass);
+  border: 1px solid var(--color-brass);
+  border-radius: var(--radius-sm);
+}
+
+.magnetic-btn--outline::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-brass);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--duration-slow) var(--ease-out-expo);
+  border-radius: inherit;
+}
+
+.magnetic-btn--outline:hover {
+  color: var(--color-midnight);
+}
+
+.magnetic-btn--outline:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.magnetic-btn--ghost {
+  background: transparent;
+  color: var(--color-text-primary);
+  border-radius: var(--radius-sm);
+}
+
+.magnetic-btn--ghost:hover {
+  color: var(--color-brass);
+}
+
+/* ── Sizes ── */
+
+.magnetic-btn--sm {
+  padding: var(--space-xs) var(--space-lg);
+  font-size: var(--text-xs);
+}
+
+.magnetic-btn--md {
+  padding: var(--space-sm) var(--space-xl);
+  font-size: var(--text-sm);
+}
+
+.magnetic-btn--lg {
+  padding: var(--space-md) var(--space-2xl);
+  font-size: var(--text-base);
+}
+
+/* ── Disabled ── */
+
+.magnetic-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

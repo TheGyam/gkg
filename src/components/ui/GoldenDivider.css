@@ -1,0 +1,26 @@
+.golden-divider {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-lg) 0;
+}
+
+.golden-divider__line {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-brass) 20%,
+    var(--color-brass-light) 50%,
+    var(--color-brass) 80%,
+    transparent 100%
+  );
+  transform-origin: left center;
+}
+
+.golden-divider--left {
+  justify-content: flex-start;
+}
+
+.golden-divider--right {
+  justify-content: flex-end;
+}

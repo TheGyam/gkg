@@ -1,0 +1,64 @@
+{
+  "pricing": {
+    "baseRate": {
+      "amount": 80,
+      "vatRate": 20,
+      "vatAmount": 16,
+      "total": 96,
+      "currency": "GBP",
+      "per": "per document/signature"
+    },
+    "notes": [
+      "VAT is charged on all notary fees at the standard rate of 20%",
+      "Complex matters may incur additional charges — a detailed quotation will be provided upon request",
+      "We endeavour to provide the best possible rates along with genuine, helpful advice"
+    ]
+  },
+  "packages": [
+    {
+      "id": "standard",
+      "name": "Standard Document",
+      "description": "Single document notarisation with standard processing",
+      "price": 80,
+      "total": 96,
+      "features": [
+        "Single document authentication",
+        "Notarial seal and certificate",
+        "Identity verification",
+        "Standard processing time"
+      ],
+      "popular": false
+    },
+    {
+      "id": "express",
+      "name": "Express Service",
+      "description": "Priority same-day notarisation for urgent matters",
+      "price": 120,
+      "total": 144,
+      "features": [
+        "Same-day processing",
+        "Priority appointment booking",
+        "Single document authentication",
+        "Notarial seal and certificate",
+        "Identity verification"
+      ],
+      "popular": true
+    },
+    {
+      "id": "corporate",
+      "name": "Corporate Package",
+      "description": "Multiple document authentication for business clients",
+      "price": 200,
+      "total": 240,
+      "features": [
+        "Up to 3 documents",
+        "Corporate document review",
+        "Notarial seal and certificates",
+        "FCDO apostille coordination",
+        "Priority processing",
+        "Dedicated account support"
+      ],
+      "popular": false
+    }
+  ]
+}

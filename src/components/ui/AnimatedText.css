@@ -1,0 +1,50 @@
+/* ============================================
+   AnimatedText — CSS-Driven Word Reveal
+   Uses GPU-composited transform + opacity only.
+   ============================================ */
+
+.anim-text__mask {
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 0.3em;
+  vertical-align: top;
+}
+
+.anim-text__word {
+  display: inline-block;
+  transform: translateY(110%);
+  opacity: 0;
+  will-change: transform, opacity;
+  /* Animation is paused until parent gets --visible class */
+  animation: revealWord 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards paused;
+}
+
+.anim-text--visible .anim-text__word {
+  animation-play-state: running;
+}
+
+.anim-text__line {
+  display: inline-block;
+  transform: translateY(40px);
+  opacity: 0;
+  will-change: transform, opacity;
+  animation: revealLine 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards paused;
+}
+
+.anim-text--visible .anim-text__line {
+  animation-play-state: running;
+}
+
+@keyframes revealWord {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes revealLine {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

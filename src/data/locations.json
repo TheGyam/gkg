@@ -1,0 +1,45 @@
+{
+  "locations": [
+    {
+      "id": "kentish-town",
+      "name": "Kentish Town Office",
+      "isPrimary": true,
+      "address": {
+        "line1": "59 Leighton Road",
+        "area": "Kentish Town",
+        "city": "London",
+        "postcode": "NW5 2QH"
+      },
+      "nearestStation": "Kentish Town",
+      "walkTime": "5 min walk",
+      "transportType": "Tube Station",
+      "coordinates": {
+        "lat": 51.5505,
+        "lng": -0.1404
+      }
+    },
+    {
+      "id": "green-lanes",
+      "name": "Green Lanes Office",
+      "isPrimary": false,
+      "address": {
+        "line1": "717 Green Lanes",
+        "area": "",
+        "city": "London",
+        "postcode": "N21 3RX"
+      },
+      "nearestStation": "Winchmore Hill",
+      "walkTime": "8 min walk",
+      "transportType": "Rail Station",
+      "coordinates": {
+        "lat": 51.6256,
+        "lng": -0.1025
+      }
+    }
+  ],
+  "contactInfo": {
+    "phone": "07958083458",
+    "email": "info@gkgnotary.co.uk",
+    "website": "www.gkgnotary.co.uk"
+  }
+}

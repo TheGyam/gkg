@@ -1,0 +1,320 @@
+/* ============================================
+   Remote Notary Page
+   ============================================ */
+
+.remote-page {
+  min-height: 100vh;
+}
+
+.remote-hero {
+  padding: calc(var(--nav-height) + var(--space-4xl)) 0 var(--space-2xl);
+  text-align: center;
+}
+
+.remote-hero__label {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  color: var(--color-brass);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+}
+
+.remote-hero__title {
+  font-size: var(--text-5xl);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-lg);
+}
+
+.remote-hero__subtitle {
+  font-size: var(--text-md);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto var(--space-2xl);
+  line-height: var(--leading-relaxed);
+}
+
+/* ── Wizard Layout ── */
+
+.remote-wizard {
+  padding: var(--space-xl) 0 var(--space-section);
+}
+
+.wizard-container {
+  background: var(--color-midnight-light);
+  border: 1px solid rgba(201, 169, 110, 0.08);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3xl);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* ── Stepper ── */
+
+.wizard-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-4xl);
+  position: relative;
+}
+
+.wizard-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  position: relative;
+  flex: 1;
+  text-align: center;
+  z-index: 1;
+}
+
+.wizard-step__indicator {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-midnight);
+  border: 2px solid rgba(201, 169, 110, 0.2);
+  color: rgba(201, 169, 110, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--duration-normal);
+}
+
+.wizard-step__title {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  transition: color var(--duration-normal);
+}
+
+.wizard-step__line {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background: rgba(201, 169, 110, 0.1);
+  z-index: -1;
+}
+
+/* States */
+.wizard-step--active .wizard-step__indicator {
+  border-color: var(--color-brass);
+  color: var(--color-midnight);
+  background: var(--color-brass);
+  box-shadow: 0 0 15px rgba(201, 169, 110, 0.3);
+}
+
+.wizard-step--active .wizard-step__title {
+  color: var(--color-brass);
+}
+
+.wizard-step--completed .wizard-step__indicator {
+  border-color: var(--color-brass);
+  color: var(--color-brass);
+  background: rgba(201, 169, 110, 0.1);
+}
+
+.wizard-step--completed .wizard-step__title {
+  color: var(--color-text-primary);
+}
+
+.wizard-step--completed .wizard-step__line {
+  background: var(--color-brass);
+}
+
+/* ── Content Area ── */
+
+.wizard-content-wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 400px; /* Prevent jumping */
+}
+
+.remote-form__section {
+  width: 100%;
+}
+
+.remote-form__title {
+  font-size: var(--text-3xl);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.remote-form__subtitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2xl);
+}
+
+.remote-form__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+/* ── Upload & Error ── */
+
+.remote-form__upload-area {
+  background: var(--color-midnight);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(201, 169, 110, 0.05);
+}
+
+.remote-form__upload-error {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-error);
+  font-size: var(--text-sm);
+  margin-top: var(--space-md);
+  padding: var(--space-sm);
+  background: rgba(239, 68, 68, 0.1);
+  border-radius: var(--radius-md);
+}
+
+/* ── Summary / Review ── */
+
+.remote-form__summary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  background: var(--color-midnight);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(201, 169, 110, 0.1);
+}
+
+.remote-form__summary-block h4 {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-brass);
+  margin-bottom: var(--space-md);
+  border-bottom: 1px solid rgba(201, 169, 110, 0.1);
+  padding-bottom: var(--space-xs);
+}
+
+.remote-form__summary-block p {
+  font-size: var(--text-md);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.remote-form__summary-block p strong {
+  color: var(--color-text-primary);
+  display: inline-block;
+  width: 80px;
+}
+
+.remote-form__summary-files {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.remote-form__summary-files li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+  background: var(--color-midnight-light);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(201, 169, 110, 0.05);
+}
+
+.remote-form__success-msg {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+  padding: var(--space-lg);
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid var(--color-success);
+  border-radius: var(--radius-md);
+  color: var(--color-success);
+  font-weight: var(--weight-medium);
+}
+
+/* ── Controls ── */
+
+.wizard-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-3xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid rgba(201, 169, 110, 0.1);
+}
+
+.wizard-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-xl);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--duration-normal);
+  border: none;
+  background: none;
+}
+
+.wizard-btn--secondary {
+  color: var(--color-text-secondary);
+}
+
+.wizard-btn--secondary:hover {
+  color: var(--color-brass);
+}
+
+.wizard-btn--primary {
+  background: var(--color-brass);
+  color: var(--color-midnight);
+}
+
+.wizard-btn--primary:hover {
+  background: var(--color-brass-light);
+  transform: translateY(-2px);
+}
+
+.spinner-border {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(10, 22, 40, 0.3);
+  border-top-color: var(--color-midnight);
+  border-radius: 50%;
+  animation: rotate 0.6s linear infinite;
+}
+
+.btn-success {
+  background-color: var(--color-success) !important;
+  color: white !important;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+  .wizard-container {
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  .remote-form__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wizard-step__title {
+    display: none;
+  }
+}

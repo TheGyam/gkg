@@ -1,0 +1,32 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Mitchell",
+      "role": "Property Developer",
+      "quote": "Gopal handled all our international property documentation with incredible efficiency. His 40+ years of experience really shows in the quality of service.",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "James Chen",
+      "role": "Business Owner",
+      "quote": "We've been using GKG Notary for all our corporate documentation for over a decade. Reliable, professional, and always accommodating.",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Priya Sharma",
+      "role": "Immigration Solicitor",
+      "quote": "I regularly refer my clients to GKG Notary. The turnaround time is excellent and the attention to detail is second to none.",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "name": "Michael O'Brien",
+      "role": "Corporate Lawyer",
+      "quote": "An outstanding notary service. Gopal's personal approach and deep understanding of international requirements make him an invaluable resource.",
+      "rating": 5
+    }
+  ]
+}

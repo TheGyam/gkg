@@ -1,0 +1,5 @@
+/* GKG Notary — Root CSS Import */
+@import './styles/tokens.css';
+@import './styles/reset.css';
+@import './styles/global.css';
+@import './styles/animations.css';

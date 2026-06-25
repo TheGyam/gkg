@@ -20,7 +20,13 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // requestAnimationFrame ensures the browser paints the new route 
+    // before we force the scroll position, fixing the issue on mobile Safari/Chrome
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      }, 0);
+    });
   }, [pathname]);
 
   return null;

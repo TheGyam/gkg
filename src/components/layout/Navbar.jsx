@@ -7,15 +7,14 @@ import './Navbar.css';
 
 const navLinks = [
   { path: '/', label: 'Home' },
+  { path: '/what-is-a-notary', label: 'What is a Notary' },
   { path: '/services', label: 'Services' },
   { path: '/about', label: 'About' },
   { path: '/fees', label: 'Fees' },
   { path: '/contact', label: 'Contact' },
 ];
 
-const secondaryLinks = [
-  { path: '/what-is-a-notary', label: 'What is a Notary' },
-];
+const secondaryLinks = [];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);

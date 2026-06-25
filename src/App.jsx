@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect } from 'react';
@@ -65,12 +65,12 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <HelmetProvider>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <Navbar />
         <AnimatedRoutes />
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </HelmetProvider>
   );
 }
